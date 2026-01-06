@@ -10,7 +10,7 @@ import ScrollText from "@/components/home/ScrollText";
 
 export default function Home() {
   return (
-    <main className="bg-brand-black relative min-h-screen overflow-x-hidden text-white">
+    <main className="bg-black relative min-h-screen text-white">
       <HeroSection />
       <FeatureSection />
       <ScrollText />
