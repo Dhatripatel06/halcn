@@ -5,6 +5,19 @@
   --foreground: #171717;
 }
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+    @apply bg-black text-white;
+    /* Prevent horizontal bounce during the stacking animation */
+    overflow-x: hidden;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
